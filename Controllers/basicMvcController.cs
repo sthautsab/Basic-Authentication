@@ -15,7 +15,7 @@ namespace Basic_Authentication.Controllers
             HttpClient client = new HttpClient();
             List<string> list = new List<string>();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
-            "Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("prashant:subedi")));
+            "Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("Utsab:shrestha")));
             var dynamicUrl = Request.Url.ToString();
             string trimmedUrl = dynamicUrl.Replace("basicmvc", "api/");
             client.BaseAddress = new Uri(trimmedUrl);
